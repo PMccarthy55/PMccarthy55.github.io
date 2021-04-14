@@ -1,66 +1,107 @@
-* {
-            	box-sizing: border-box;
-        	}
-        	body {
-        		margin: auto; 
-                background-color: #DDDAD5;
-                font-size: 20px;
-                text-align: center;
-     
-        	}
-        	.header {
-        		background-color: #C9B48C;
-        		margin-left: 10%;
-        		margin-right: 10%;
-        		padding-top: 10px;
-        		padding-bottom: 10px;
-        		
-        	}
-        		.navigation {
-        		background-color: #ADD8E6;
-        		margin-left: 10%;
-        		margin-right: 10%;
-        		padding-top: 10px;
-        		padding-bottom: 10px;
-        		border-radius: 20px 20px 0px 0px;
-        	}
-        	.flex-container{
-        		background-color: #FFF7EF;
-        		display: flex;
-        		text-align: left;
-        		padding-left: 30%;
-        		margin-left: 10%;
-        		margin-right: 10%;
-        		padding-bottom: 10px;
-        	}
-        	.content{
-        		background-color: #FFF7EF;
-        		margin-left: 10%;
-        		margin-right: 10%;   
-        		padding-top: 10px;
-        	}
-        	.cupcake {
-        		border: 5px dashed #E7B2C1;
-        		border-radius: 10px;
-        		height: 125px;
-        		width: 125px;
-        	}
-
-        
-        	.img {
-        		border-radius: 5px; 
-        		border-color: #E7B2C1; 
-        	}
-        	.footer{
-        		background-color: #ADD8F6;
-        		margin-left: 10%;
-        		margin-right: 10%;
-        		padding-top: 10px;
-        		padding-bottom: 10px;
-        		text-align: center;
-        		border-radius: 0px 0px 20px 20px;
-
-        	}
-.ul {
-	vertical-align: center;
-}
+ html,
+ body {
+         color: #878787;
+         margin: 0;
+         font-family: sans-serif;
+         text-align: center;
+         }
+         h1 {
+         font-size: 75px;
+         color: black;
+         text-transform: uppercase;
+         font-weight: normal;
+         }
+         h2 {
+         font-size: 55px;
+         color: black;
+         text-transform: uppercase;
+         font-weight: normal;
+         }
+         img {
+         width: 100%;
+         }
+         .nav-bar {
+         list-style-type: none;
+         margin: 0;
+         }
+         .nav-bar-list {
+         float: left;
+         padding-top: 10px;
+         }
+         .nav-bar-link {
+         color: black;
+         font-size: 24px;
+         padding: 20px;
+         text-decoration: none;
+         }
+         .main-header {
+         padding-top: 200px;
+         height: 450px;
+         background: url("imgs/Sunset_Pic.jpg") no-repeat center;
+         background-size: cover;
+         }
+         .title {
+         color: white;
+         font-size: 1.5em;
+         }
+         .intro {
+         font-size: 1.25em;
+         line-height: 1.5em;
+         width: 50%;
+         margin: auto;
+         padding: 40px;
+         }
+         .box {
+         width: 80%;
+         margin: auto;
+         display: flex;
+         }
+         .card {
+         width: 100%;
+         padding: 20px;
+         text-align: left;
+         border: 10px solid;
+         border-color: black;
+         }
+         .card2 {
+         width: 100%;
+         padding: 20px;
+         text-align: left;
+         border: 10px solid;
+         border-color: black;
+         }
+         .card3 {
+         width: 100%;
+         padding: 20px;
+         text-align: left;
+         border: 10px solid;
+         border-color: black;
+         }
+	.card4 {
+         width: 100%;
+         padding: 20px;
+         text-align: left;
+         border: 10px solid;
+         border-color: black;
+         }
+         @media only screen and (max-width: 600px) {
+         /*add your CSS selectors below for the responsive page on smaller devices*/
+         .box {
+         display: flex;
+         flex-direction: column;
+         margin:auto;
+         }
+         .nav-bar {
+         display: flex;
+         flex-direction: column;
+         padding: 0px;
+         background-color: lightgray;
+         }
+         .main-header {
+         padding-top: 10px;
+         height: 400px;
+         background: url("imgs/Sunset_Pic.jpg") no-repeat center;
+         background-size: 90%;
+         font-size: 30px;
+         }
+         }
