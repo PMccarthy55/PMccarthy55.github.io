@@ -14,6 +14,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.mySlides { display: none; }
 </style>
 </head><body class="w3-black">
 
@@ -78,15 +79,49 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Northern Bass, Co.</h1>
     <p>Bass Fishing Guide & Resource</p>
-    <img src="imgs/pat2.jpg" alt="boy" class="w3-image" width="992" height="1108">
+        <div class="w3-content" style="max-width:2000px; margin-top:46px">
+        <!-- Slideshow Images -->
+        <!-- Image 1 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/chris.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Los Angeles</h3>
+                <p><b>We had the best time playing at Venice Beach!</b></p>
+            </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/dad1.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>New York</h3>
+                <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+            </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/ryan1.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Chicago</h3>
+                <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+            </div>
+        </div>
+           <!-- Image 4 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="imgs/greg1.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Cofee Shop</h3>
+                <p><b>Coffee is coo.</b></p>
+            </div>
+        </div>
+    </div>
   </header>
 
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Pat McArthy</h2>
+    <h2 class="w3-text-light-grey">Pat McCarthy</h2>
     <hr style="width:175px" class="w3-opacity">
-    <p>Pat McCarthy has been a fisherman for more than twenty-five years, with experience on a vast majority of New England bodies of water. He competed regularly in tournaments nationwide, and enjoys teachings others the secrets he has picked up along the way!
+    <p>Pat McCarthy has been a fisherman for more than twenty-five years, with experience on a vast majority of New England bodies of water. He competes regularly in tournaments nationwide, and enjoys teachings others the secrets he has picked up along the way!
     </p>
 
     <!-- Grid for pricing tables -->
@@ -288,7 +323,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+ <script>
+        // Automatic Slideshow - change image every 2 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
 
+          myIndex++;
+          if (myIndex > x.length) {
+            myIndex = 1
+          }
+
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+    </script>
 
 </body>
 </html>
